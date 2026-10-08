@@ -4,3 +4,4 @@ class Rectangle:
             raise ValueError("Input value cannot be 0 or less.")
         self.length = length
         self.width = width
+ 
