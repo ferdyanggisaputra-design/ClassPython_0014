@@ -12,3 +12,13 @@ class Rectangle:
         return f"rectangle, {self.length} cm long, and {self.width} cm wide"
 def main():
     try:
+        panjang = 3
+        lebar = 2
+        my_rectangle = Rectangle(panjang, lebar)
+        print(my_rectangle)
+        circumference = my_rectangle.calculate_circumference()
+        print(f"Circumference: {circumference} cm")
+        area = my_rectangle.calculate_area()
+        print(f"Area: {area} cm^2")
+    except ValueError as e:
+        print(f"Error: {e}")
